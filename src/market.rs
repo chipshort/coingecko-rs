@@ -25,7 +25,7 @@ pub struct Market {
     pub ath_change_percentage: Option<Decimal>,
     pub ath_date: Option<String>,
     pub atl: Option<Decimal>,
-    pub atl_change_percentage: Option<Decimal>,
+    pub atl_change_percentage: Option<f64>, //using f64 instead of Decimal because this can be a very big number
     pub atl_date: Option<String>,
     pub roi: Option<Roi>,
     pub last_updated: Option<String>,
